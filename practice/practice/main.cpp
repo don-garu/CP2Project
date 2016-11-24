@@ -2,6 +2,7 @@
 #include "KeyEvent.h"
 #include <process.h>  
 #include "MiniGame.h"
+#include "Frame.h"
 
 Game* game = new Game();
 unsigned int __stdcall myThread(void*) {
@@ -29,7 +30,7 @@ unsigned int __stdcall myThread(void*);
 unsigned int __stdcall keyEvent(void *);
 */
 int main() {
-	
+	/*
 	HANDLE handleA, handleB;
 
 	handleA = (HANDLE)_beginthreadex(0,0,&myThread,(void*)0,0,0);
@@ -40,7 +41,18 @@ int main() {
 
 	CloseHandle(handleA);
 	CloseHandle(handleB);
-	
+	*/
+
+	try {
+		Frame* f1 = new Frame();
+		Frame* f2 = new Frame[10];
+
+		delete f1;
+		delete[] f2;
+	}
+	catch (string s) {
+		cerr << "Error msg : " << s << endl;
+	}
 
 	
 	return 0;
