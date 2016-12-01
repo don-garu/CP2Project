@@ -156,6 +156,7 @@
   <ItemGroup>
     <ClInclude Include="ExArray.h" />
     <ClInclude Include="Frame.h" />
+    <ClInclude Include="Word.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
